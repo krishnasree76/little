@@ -160,9 +160,15 @@ export default function Founders() {
                 <ArrowRight className="w-5 h-5" />
               </Link>
             </Button>
-            <Button asChild variant="outline" size="xl" className="border-secondary-foreground text-secondary-foreground hover:bg-secondary-foreground hover:text-secondary">
-              <Link to="/franchise">Partner With Us</Link>
-            </Button>
+            <Button
+  asChild
+  variant="outline"
+  size="xl"
+  className="border-[#3BAE5D] text-[#3BAE5D] hover:bg-[#3BAE5D] hover:text-white"
+>
+  <Link to="/franchise">Partner With Us</Link>
+</Button>
+
           </div>
         </div>
       </section>
