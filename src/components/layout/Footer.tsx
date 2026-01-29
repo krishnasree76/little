@@ -23,7 +23,7 @@ export function Footer() {
             <p className="text-primary-foreground/80 text-sm leading-relaxed">
               Exclusive Evening Learning Centers where children develop skills, confidence, and creativity through activity-based learning.
             </p>
-            <div className="flex gap-3">
+            {/* <div className="flex gap-3">
               <a href="#" className="w-10 h-10 bg-primary-foreground/10 hover:bg-accent hover:text-accent-foreground rounded-lg flex items-center justify-center transition-colors">
                 <Facebook className="w-5 h-5" />
               </a>
@@ -36,7 +36,7 @@ export function Footer() {
               <a href="#" className="w-10 h-10 bg-primary-foreground/10 hover:bg-accent hover:text-accent-foreground rounded-lg flex items-center justify-center transition-colors">
                 <Linkedin className="w-5 h-5" />
               </a>
-            </div>
+            </div> */}
           </div>
 
           {/* Quick Links */}
