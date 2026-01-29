@@ -1,0 +1,230 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700;800;900&family=Poppins:wght@400;500;600;700;800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Little Genius Kids World - Innovation HUB Design System
+   Colors are in HSL format for Tailwind compatibility
+*/
+
+@layer base {
+  :root {
+    /* Brand Colors - Converted to HSL */
+    --primary: 206 88% 40%;           /* #0A66C2 - Trust Blue */
+    --primary-foreground: 0 0% 100%;
+    
+    --secondary: 139 51% 46%;         /* #3BAE5D - Growth Green */
+    --secondary-foreground: 0 0% 100%;
+    
+    --accent: 44 100% 62%;            /* #FFC83D - Accent Yellow */
+    --accent-foreground: 222 47% 11%;
+    
+    --background: 216 100% 99%;       /* #F9FBFF - Soft White */
+    --foreground: 222 47% 11%;
+    
+    /* UI Colors */
+    --card: 0 0% 100%;
+    --card-foreground: 222 47% 11%;
+    
+    --popover: 0 0% 100%;
+    --popover-foreground: 222 47% 11%;
+    
+    --muted: 210 40% 96%;
+    --muted-foreground: 215 16% 47%;
+    
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+    
+    --border: 214 32% 91%;
+    --input: 214 32% 91%;
+    --ring: 206 88% 40%;
+    
+    --radius: 0.75rem;
+    
+    /* Custom gradients */
+    --gradient-hero: linear-gradient(135deg, hsl(206 88% 40%) 0%, hsl(206 88% 55%) 100%);
+    --gradient-green: linear-gradient(135deg, hsl(139 51% 46%) 0%, hsl(139 51% 56%) 100%);
+    --gradient-yellow: linear-gradient(135deg, hsl(44 100% 62%) 0%, hsl(44 100% 72%) 100%);
+    --gradient-soft: linear-gradient(180deg, hsl(216 100% 99%) 0%, hsl(210 40% 96%) 100%);
+    
+    /* Shadows */
+    --shadow-sm: 0 2px 8px -2px hsl(206 88% 40% / 0.1);
+    --shadow-md: 0 4px 16px -4px hsl(206 88% 40% / 0.15);
+    --shadow-lg: 0 8px 32px -8px hsl(206 88% 40% / 0.2);
+    --shadow-yellow: 0 4px 20px -4px hsl(44 100% 62% / 0.4);
+    
+    /* Sidebar */
+    --sidebar-background: 0 0% 98%;
+    --sidebar-foreground: 240 5% 26%;
+    --sidebar-primary: 206 88% 40%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 210 40% 96%;
+    --sidebar-accent-foreground: 222 47% 11%;
+    --sidebar-border: 214 32% 91%;
+    --sidebar-ring: 206 88% 40%;
+  }
+
+  .dark {
+    --background: 222 47% 11%;
+    --foreground: 210 40% 98%;
+    --card: 222 47% 15%;
+    --card-foreground: 210 40% 98%;
+    --popover: 222 47% 15%;
+    --popover-foreground: 210 40% 98%;
+    --primary: 206 88% 50%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 139 51% 46%;
+    --secondary-foreground: 0 0% 100%;
+    --accent: 44 100% 62%;
+    --accent-foreground: 222 47% 11%;
+    --muted: 217 33% 17%;
+    --muted-foreground: 215 20% 65%;
+    --destructive: 0 63% 31%;
+    --destructive-foreground: 210 40% 98%;
+    --border: 217 33% 17%;
+    --input: 217 33% 17%;
+    --ring: 206 88% 50%;
+    --sidebar-background: 222 47% 11%;
+    --sidebar-foreground: 210 40% 98%;
+    --sidebar-primary: 206 88% 50%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 217 33% 17%;
+    --sidebar-accent-foreground: 210 40% 98%;
+    --sidebar-border: 217 33% 17%;
+    --sidebar-ring: 206 88% 50%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-sans antialiased;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-heading font-bold tracking-tight;
+  }
+}
+
+@layer components {
+  /* Hero gradient backgrounds */
+  .bg-hero-gradient {
+    background: var(--gradient-hero);
+  }
+  
+  .bg-green-gradient {
+    background: var(--gradient-green);
+  }
+  
+  .bg-yellow-gradient {
+    background: var(--gradient-yellow);
+  }
+  
+  .bg-soft-gradient {
+    background: var(--gradient-soft);
+  }
+  
+  /* Card styles */
+  .card-shadow {
+    box-shadow: var(--shadow-md);
+  }
+  
+  .card-shadow-lg {
+    box-shadow: var(--shadow-lg);
+  }
+  
+  /* Yellow CTA glow */
+  .cta-glow {
+    box-shadow: var(--shadow-yellow);
+  }
+  
+  /* Rounded modern style */
+  .rounded-modern {
+    @apply rounded-2xl;
+  }
+  
+  .rounded-modern-lg {
+    @apply rounded-3xl;
+  }
+  
+  /* Section spacing */
+  .section-padding {
+    @apply py-16 md:py-24 px-4 md:px-8;
+  }
+  
+  /* Container */
+  .container-custom {
+    @apply max-w-7xl mx-auto px-4 md:px-8;
+  }
+  
+  /* Text gradient */
+  .text-gradient-primary {
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-primary to-primary/80;
+  }
+  
+  /* Highlight box styles */
+  .highlight-box {
+    @apply bg-accent/10 border-l-4 border-accent p-6 rounded-r-xl;
+  }
+  
+  .quote-box {
+    @apply bg-primary/5 border-l-4 border-primary p-6 rounded-r-xl italic;
+  }
+  
+  /* Icon containers */
+  .icon-circle {
+    @apply w-14 h-14 rounded-full flex items-center justify-center;
+  }
+  
+  .icon-circle-primary {
+    @apply icon-circle bg-primary/10 text-primary;
+  }
+  
+  .icon-circle-secondary {
+    @apply icon-circle bg-secondary/10 text-secondary;
+  }
+  
+  .icon-circle-accent {
+    @apply icon-circle bg-accent/20 text-accent-foreground;
+  }
+}
+
+@layer utilities {
+  /* Animations */
+  .animate-float {
+    animation: float 6s ease-in-out infinite;
+  }
+  
+  .animate-bounce-slow {
+    animation: bounce 3s ease-in-out infinite;
+  }
+  
+  @keyframes float {
+    0%, 100% { transform: translateY(0px); }
+    50% { transform: translateY(-20px); }
+  }
+  
+  /* Hover effects */
+  .hover-lift {
+    @apply transition-all duration-300 hover:-translate-y-1 hover:shadow-lg;
+  }
+  
+  .hover-scale {
+    @apply transition-transform duration-300 hover:scale-105;
+  }
+  
+  /* Pattern backgrounds */
+  .pattern-dots {
+    background-image: radial-gradient(hsl(206 88% 40% / 0.1) 1px, transparent 1px);
+    background-size: 20px 20px;
+  }
+  
+  .pattern-circles {
+    background-image: radial-gradient(circle at 20% 80%, hsl(44 100% 62% / 0.1) 0%, transparent 50%),
+                      radial-gradient(circle at 80% 20%, hsl(139 51% 46% / 0.1) 0%, transparent 50%);
+  }
+}
