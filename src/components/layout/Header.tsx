@@ -2,6 +2,8 @@ import { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { Menu, X, Phone, Mail } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import logo from "@/assets/logo.png"; // add at top with other imports
+
 
 const navLinks = [
   { name: "Home", path: "/" },
@@ -45,20 +47,23 @@ export function Header() {
       <nav className="container-custom py-4">
         <div className="flex items-center justify-between">
           {/* Logo */}
-          <Link to="/" className="flex items-center gap-2">
-  <div className="w-10 h-10 bg-primary rounded-xl flex items-center justify-center shrink-0">
-    <span className="text-primary-foreground font-heading font-bold text-lg">LG</span>
-  </div>
+          <Link to="/" className="flex items-center gap-2 min-w-0">
+  <img
+    src={logo}
+    alt="Little Genius Kids World Logo"
+    className="h-10 w-auto sm:h-12 shrink-0"
+  />
 
-  <div className="block">
-    <h1 className="font-heading font-bold text-primary text-xs sm:text-sm leading-tight">
+  <div className="min-w-0">
+    <h1 className="font-heading font-bold text-primary text-xs sm:text-sm leading-tight truncate">
       Little Genius Kids World®
     </h1>
-    <p className="text-[10px] sm:text-xs text-muted-foreground leading-tight">
+    <p className="text-[10px] sm:text-xs text-muted-foreground leading-tight truncate">
       Innovation HUB
     </p>
   </div>
 </Link>
+
 
 
           {/* Desktop nav */}
