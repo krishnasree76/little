@@ -56,7 +56,7 @@ export default function Home() {
               </h1>
               
               <p className="text-xl text-muted-foreground">
-                Beyond Preschool • Beyond Academics • Beyond Ordinary
+                • Beyond Preschool • Beyond Academics • Beyond Ordinary
               </p>
               
               <p className="text-muted-foreground text-lg">
