@@ -1,5 +1,8 @@
 import { Link } from "react-router-dom";
 import { MapPin, Phone, Mail, Facebook, Instagram, Youtube, Linkedin } from "lucide-react";
+import logo from "@/assets/WhatsApp_Image_2026-01-29_at_12.50.51_PM-removebg-preview.png";
+import hubLogo from "@/assets/innovation-hub-logo.png";
+
 
 export function Footer() {
   return (
@@ -9,17 +12,29 @@ export function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
           {/* Brand */}
           <div className="space-y-4">
-            <div className="flex items-center gap-2">
-              <div className="w-12 h-12 bg-accent rounded-xl flex items-center justify-center">
-                <span className="text-accent-foreground font-heading font-bold text-xl">LG</span>
-              </div>
-              <div>
-                <h3 className="font-heading font-bold text-lg leading-tight">
-                  Little Genius Kids World®
-                </h3>
-                <p className="text-sm text-primary-foreground/80">Innovation HUB</p>
-              </div>
-            </div>
+            <div className="space-y-3">
+  <div className="flex items-center gap-3">
+    <img
+      src={logo}
+      alt="Little Genius Kids World Logo"
+      className="h-14 w-auto object-contain drop-shadow-md"
+    />
+    <div>
+      <h3 className="font-heading font-bold text-lg leading-tight">
+        Little Genius Kids World®
+      </h3>
+      {/* <p className="text-sm text-primary-foreground/80">Innovation HUB</p> */}
+    </div>
+  </div>
+
+  <img
+    src={hubLogo}
+    alt="Innovation HUB"
+    className="h-10 w-auto object-contain drop-shadow-md"
+  />
+</div>
+
+
             <p className="text-primary-foreground/80 text-sm leading-relaxed">
               Exclusive Evening Learning Centers where children develop skills, confidence, and creativity through activity-based learning.
             </p>

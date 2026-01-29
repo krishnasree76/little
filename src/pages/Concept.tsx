@@ -3,6 +3,7 @@ import { Section, SectionHeader } from "@/components/ui/section";
 import { FeatureCard, HighlightBox } from "@/components/ui/feature-card";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
+
 import { 
   Sparkles, 
   Brain, 
