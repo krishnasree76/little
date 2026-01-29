@@ -11,7 +11,8 @@
 @layer base {
   :root {
     /* Brand Colors - Converted to HSL */
-    --primary: 206 88% 40%;           /* #0A66C2 - Trust Blue */
+    --primary: 205 59% 23%;   /* #173F5F - Logo Navy Blue */
+           /* #0A66C2 - Trust Blue */
     --primary-foreground: 0 0% 100%;
     
     --secondary: 139 51% 46%;         /* #3BAE5D - Growth Green */
@@ -38,20 +39,23 @@
     
     --border: 214 32% 91%;
     --input: 214 32% 91%;
-    --ring: 206 88% 40%;
+    --ring: 205 59% 23%;
+
     
     --radius: 0.75rem;
     
     /* Custom gradients */
-    --gradient-hero: linear-gradient(135deg, hsl(206 88% 40%) 0%, hsl(206 88% 55%) 100%);
+    --gradient-hero: linear-gradient(135deg, hsl(205 59% 23%) 0%, hsl(205 59% 30%) 100%);
+
     --gradient-green: linear-gradient(135deg, hsl(139 51% 46%) 0%, hsl(139 51% 56%) 100%);
     --gradient-yellow: linear-gradient(135deg, hsl(44 100% 62%) 0%, hsl(44 100% 72%) 100%);
     --gradient-soft: linear-gradient(180deg, hsl(216 100% 99%) 0%, hsl(210 40% 96%) 100%);
     
     /* Shadows */
-    --shadow-sm: 0 2px 8px -2px hsl(206 88% 40% / 0.1);
-    --shadow-md: 0 4px 16px -4px hsl(206 88% 40% / 0.15);
-    --shadow-lg: 0 8px 32px -8px hsl(206 88% 40% / 0.2);
+    ---shadow-sm: 0 2px 8px -2px hsl(205 59% 23% / 0.1);
+--shadow-md: 0 4px 16px -4px hsl(205 59% 23% / 0.15);
+--shadow-lg: 0 8px 32px -8px hsl(205 59% 23% / 0.2);
+
     --shadow-yellow: 0 4px 20px -4px hsl(44 100% 62% / 0.4);
     
     /* Sidebar */
@@ -64,6 +68,17 @@
     --sidebar-border: 214 32% 91%;
     --sidebar-ring: 206 88% 40%;
   }
+  @font-face {
+  font-family: "TAN Headline";
+  src: url("/src/assets/fonts/TAN-Headline.woff2") format("woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Androgyne";
+  src: url("/src/assets/fonts/Androgyne-Regular.woff2") format("woff2");
+  font-display: swap;
+}
 
   .dark {
     --background: 222 47% 11%;
@@ -72,7 +87,8 @@
     --card-foreground: 210 40% 98%;
     --popover: 222 47% 15%;
     --popover-foreground: 210 40% 98%;
-    --primary: 206 88% 50%;
+    --primary: 205 59% 30%;
+
     --primary-foreground: 0 0% 100%;
     --secondary: 139 51% 46%;
     --secondary-foreground: 0 0% 100%;
@@ -194,6 +210,14 @@
 }
 
 @layer utilities {
+  .font-hub {
+  font-family: "TAN Headline", serif;
+}
+
+.font-lgkw {
+  font-family: "Androgyne", cursive;
+}
+
   /* Animations */
   .animate-float {
     animation: float 6s ease-in-out infinite;
@@ -219,7 +243,8 @@
   
   /* Pattern backgrounds */
   .pattern-dots {
-    background-image: radial-gradient(hsl(206 88% 40% / 0.1) 1px, transparent 1px);
+  background-image: radial-gradient(hsl(205 59% 23% / 0.1) 1px, transparent 1px);
+
     background-size: 20px 20px;
   }
   

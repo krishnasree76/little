@@ -125,7 +125,7 @@ Interest: ${form.get("interest")}
               rel="noopener noreferrer"
               className="text-primary-foreground/80 text-sm hover:underline"
             >
-              C-05-320, Beside Sri Krishna Temple,<br />
+              Register Office C-05-320,<br /> Beside Sri Krishna Temple,<br />
               Dwaraka Nagar, KADAPA – 516004
             </a>
           </motion.div>

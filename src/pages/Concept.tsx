@@ -9,7 +9,6 @@ import {
   Brain, 
   Lightbulb, 
   MessageSquare, 
-  Puzzle,
   HandHeart,
   Layers,
   ArrowRight,
@@ -41,16 +40,19 @@ export default function Concept() {
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div className="space-y-6">
               <span className="inline-block bg-accent/20 text-accent-foreground px-4 py-1.5 rounded-full text-sm font-semibold">
-                The Innovation HUB Concept
+                The <span className="font-hub">Innovation HUB</span> Concept
               </span>
+
               <h1 className="font-heading text-4xl md:text-5xl lg:text-6xl font-bold text-foreground leading-tight">
                 What Happens Inside an{" "}
-                <span className="text-primary">Innovation HUB?</span>
+                <span className="text-primary font-hub">Innovation HUB?</span>
               </h1>
+
               <p className="text-xl text-muted-foreground">
                 A Beyond Preschool evening learning center where children come after school to 
                 engage in structured, activity-based programs.
               </p>
+
               <Button asChild variant="cta" size="xl">
                 <Link to="/contact">
                   Visit a Center Near You
@@ -102,7 +104,7 @@ export default function Concept() {
             />
             
             <p className="text-lg text-muted-foreground mb-8">
-              At Innovation HUB, learning is never about passive listening. Children actively 
+              At <span className="font-hub">Innovation HUB</span>, learning is never about passive listening. Children actively 
               participate, create, and discover through:
             </p>
             
@@ -131,7 +133,7 @@ export default function Concept() {
                 Safe & Nurturing Environment
               </h3>
               <p className="text-muted-foreground">
-                Every Innovation HUB center maintains the highest standards of safety and care, 
+                Every <span className="font-hub">Innovation HUB</span> center maintains the highest standards of safety and care, 
                 with trained facilitators who understand child development.
               </p>
             </div>
@@ -180,41 +182,11 @@ export default function Concept() {
         </div>
       </Section>
 
-      {/* Daily Schedule Preview */}
-      <Section className="bg-card">
-        <SectionHeader 
-          badge="A Day at Innovation HUB"
-          title="Structured Evening Sessions"
-          subtitle="Our evening program is designed to maximize learning in a joyful environment"
-        />
-        
-        <div className="max-w-3xl mx-auto">
-          <div className="space-y-4">
-            {[
-              { time: "4:00 PM", activity: "Welcome & Warm-up Activities", color: "bg-primary" },
-              { time: "4:30 PM", activity: "Skill Session with Glanto Kits", color: "bg-secondary" },
-              { time: "5:15 PM", activity: "Creative Exploration Time", color: "bg-accent" },
-              { time: "5:45 PM", activity: "Group Activity & Confidence Building", color: "bg-primary" },
-              { time: "6:15 PM", activity: "Cool Down & Sharing Circle", color: "bg-secondary" },
-            ].map((item, index) => (
-              <div key={index} className="flex items-center gap-4">
-                <div className={`${item.color} text-white rounded-xl px-4 py-2 font-bold min-w-[100px] text-center`}>
-                  {item.time}
-                </div>
-                <div className="flex-1 bg-muted rounded-xl p-4">
-                  <p className="font-medium text-foreground">{item.activity}</p>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </Section>
-
       {/* CTA Section */}
       <section className="bg-secondary py-20">
         <div className="container-custom text-center">
           <h2 className="font-heading text-3xl md:text-4xl font-bold text-secondary-foreground mb-4">
-            Experience Innovation HUB
+            Experience <span className="font-hub">Innovation HUB</span>
           </h2>
           <p className="text-secondary-foreground/80 text-lg mb-8 max-w-2xl mx-auto">
             Schedule a visit to see how we're transforming evening learning for children.

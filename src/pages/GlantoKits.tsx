@@ -191,9 +191,15 @@ export default function GlantoKits() {
                 <ArrowRight className="w-5 h-5" />
               </Link>
             </Button>
-            <Button asChild variant="outline" size="xl" className="border-secondary-foreground text-secondary-foreground hover:bg-secondary-foreground hover:text-secondary">
-              <Link to="/franchise">Become a Partner</Link>
-            </Button>
+            <Button
+  asChild
+  variant="outline"
+  size="xl"
+  className="border-[#3BAE5D] text-[#3BAE5D] hover:bg-[#3BAE5D] hover:text-white"
+>
+  <Link to="/franchise">Become a Partner</Link>
+</Button>
+
           </div>
         </div>
       </section>

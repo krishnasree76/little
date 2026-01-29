@@ -42,7 +42,8 @@ export default function Franchise() {
                 <Briefcase className="w-4 h-4 inline mr-2" />
                 Franchise Opportunity
               </span>
-              <h1 className="font-heading text-4xl md:text-5xl lg:text-6xl font-bold text-foreground leading-tight">
+              <h1 className="font-heading text-3xl md:text-4xl lg:text-5xl font-bold text-foreground leading-tight">
+
                 Own the Evening Learning{" "}
                 <span className="text-primary">Revolution</span> in Your District
               </h1>
