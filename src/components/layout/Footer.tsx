@@ -108,12 +108,28 @@ export function Footer() {
 
       {/* Bottom bar */}
       <div className="border-t border-border">
-        <div className="container-custom py-6 flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-muted-foreground">
-          <p>
-            © 2024 <span className="font-lgkw">Little Genius Kids World®</span> – <span className="font-hub">Innovation HUB</span>. All rights reserved.
-          </p>
-        </div>
-      </div>
+  <div className="container-custom py-6 flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-muted-foreground">
+    
+    <p>
+      © 2026 <span className="font-lgkw">Little Genius Kids World®</span> –{" "}
+      <span className="font-hub">Innovation HUB</span>. All rights reserved.
+    </p>
+
+    <p className="flex items-center gap-1">
+      Made with <span className="text-red-500">❤️</span> by{" "}
+      <a
+        href="https://staffarc.in"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="text-primary hover:text-accent font-medium transition-colors"
+      >
+        StaffArc
+      </a>
+    </p>
+
+  </div>
+</div>
+
     </footer>
   );
 }

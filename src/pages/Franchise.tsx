@@ -68,6 +68,31 @@ export default function Franchise() {
           </div>
         </div>
       </section>
+      {/* Franchise Introduction Video */}
+<Section className="bg-white">
+  <SectionHeader
+    badge="Watch & Learn"
+    title="See the Innovation HUB Franchise Model in Action"
+    subtitle="Understand how our district partnership model works"
+  />
+
+  <div className="max-w-4xl mx-auto mt-10">
+    <div className="relative w-full overflow-hidden rounded-3xl shadow-large"
+         style={{ paddingTop: "56.25%" }}>
+
+      <iframe
+        src="https://www.youtube.com/embed/hwIDOqTBwKY"
+        title="Innovation HUB Franchise Overview"
+        className="absolute top-0 left-0 w-full h-full"
+        frameBorder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowFullScreen
+      ></iframe>
+
+    </div>
+  </div>
+</Section>
+
 
       {/* What Makes This Unique Section */}
       <Section className="bg-card">
