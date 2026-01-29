@@ -20,38 +20,46 @@ export function Header() {
     <header className="sticky top-0 z-50 bg-card/95 backdrop-blur-md shadow-soft">
       {/* Top bar */}
       <div className="bg-primary text-primary-foreground py-2">
-        <div className="container-custom flex flex-wrap justify-center md:justify-between items-center gap-2 text-sm">
-          <div className="flex items-center gap-4">
-            <a href="tel:9984799847" className="flex items-center gap-1 hover:text-accent transition-colors">
-              <Phone className="w-3.5 h-3.5" />
-              <span>99847 99847</span>
-            </a>
-            <a href="mailto:pvr@littlegeniusinnovationhub.com" className="flex items-center gap-1 hover:text-accent transition-colors hidden sm:flex">
-              <Mail className="w-3.5 h-3.5" />
-              <span>pvr@littlegeniusinnovationhub.com</span>
-            </a>
-          </div>
-          <span className="hidden md:block text-primary-foreground/80">
-            Exclusive Evening Learning Centers
-          </span>
-        </div>
-      </div>
+  <div className="container-custom flex flex-wrap justify-center md:justify-between items-center gap-2 text-sm">
+    
+    <div className="flex flex-col sm:flex-row items-center gap-2 sm:gap-4">
+      <a href="tel:9984799847" className="flex items-center gap-1 hover:text-accent transition-colors">
+        <Phone className="w-3.5 h-3.5" />
+        <span>99847 99847</span>
+      </a>
+
+      <a href="mailto:pvr@littlegeniusinnovationhub.com" className="flex items-center gap-1 hover:text-accent transition-colors">
+        <Mail className="w-3.5 h-3.5" />
+        <span>pvr@littlegeniusinnovationhub.com</span>
+      </a>
+    </div>
+
+    <span className="hidden md:block text-primary-foreground/80">
+      Exclusive Evening Learning Centers
+    </span>
+  </div>
+</div>
+
 
       {/* Main nav */}
       <nav className="container-custom py-4">
         <div className="flex items-center justify-between">
           {/* Logo */}
           <Link to="/" className="flex items-center gap-2">
-            <div className="w-10 h-10 bg-primary rounded-xl flex items-center justify-center">
-              <span className="text-primary-foreground font-heading font-bold text-lg">LG</span>
-            </div>
-            <div className="hidden sm:block">
-              <h1 className="font-heading font-bold text-primary text-sm leading-tight">
-                Little Genius Kids World®
-              </h1>
-              <p className="text-xs text-muted-foreground">Innovation HUB</p>
-            </div>
-          </Link>
+  <div className="w-10 h-10 bg-primary rounded-xl flex items-center justify-center shrink-0">
+    <span className="text-primary-foreground font-heading font-bold text-lg">LG</span>
+  </div>
+
+  <div className="block">
+    <h1 className="font-heading font-bold text-primary text-xs sm:text-sm leading-tight">
+      Little Genius Kids World®
+    </h1>
+    <p className="text-[10px] sm:text-xs text-muted-foreground leading-tight">
+      Innovation HUB
+    </p>
+  </div>
+</Link>
+
 
           {/* Desktop nav */}
           <div className="hidden lg:flex items-center gap-1">
