@@ -13,7 +13,7 @@ import {
   MapPin,
   Briefcase
 } from "lucide-react";
-import franchiseImage from "@/assets/franchise-opportunity.jpg";
+import franchiseImage from "@/assets/franchise.jpeg";
 
 const uniquePoints = [
   { icon: Building2, title: "Not a School Franchise", description: "A new category of education business" },

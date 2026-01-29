@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import { MapPin, Phone, Mail } from "lucide-react";
-import hubLogo from "@/assets/ChatGPT Image Jan 29, 2026, 06_25_36 PM.png";
+import hubLogo from "@/assets/image.png";
 
 export function Footer() {
   return (
