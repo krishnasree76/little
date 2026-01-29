@@ -81,14 +81,15 @@ export default function Franchise() {
          style={{ paddingTop: "56.25%" }}>
 
       <iframe
-        src="https://www.youtube.com/embed/hwIDOqTBwKY?autoplay=1&mute=1"
+  src="https://www.youtube.com/embed/hwIDOqTBwKY?autoplay=1&controls=0&modestbranding=1&rel=0&playsinline=1"
+  title="Innovation HUB Franchise Overview"
+  className="absolute top-0 left-0 w-full h-full"
+  frameBorder="0"
+  allow="autoplay; encrypted-media"
+  allowFullScreen
+></iframe>
 
-        title="Innovation HUB Franchise Overview"
-        className="absolute top-0 left-0 w-full h-full"
-        frameBorder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-        allowFullScreen
-      ></iframe>
+
 
     </div>
   </div>
