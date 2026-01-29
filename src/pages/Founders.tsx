@@ -38,7 +38,7 @@ export default function Founders() {
               />
             </div>
             <div className="absolute -bottom-4 -right-4 bg-accent rounded-2xl p-4 shadow-large">
-              <p className="font-heading font-bold text-accent-foreground">Est. 2024</p>
+              <p className="font-heading font-bold text-accent-foreground">Est. 2022</p>
             </div>
           </div>
           

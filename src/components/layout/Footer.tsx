@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import { MapPin, Phone, Mail, Facebook, Instagram, Youtube, Linkedin } from "lucide-react";
-import logo from "@/assets/WhatsApp_Image_2026-01-29_at_12.50.51_PM-removebg-preview.png";
-import hubLogo from "@/assets/innovation-hub-logo.png";
+import logo from "@/assets/logo.png";
+import hubLogo from "@/assets/WhatsApp Image 2026-01-29 at 12.50.51 PM (1).jpeg";
 
 
 export function Footer() {
@@ -130,7 +130,7 @@ export function Footer() {
       {/* Bottom bar */}
       <div className="border-t border-primary-foreground/10">
         <div className="container-custom py-6 flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-primary-foreground/70">
-          <p>© 2024 Little Genius Kids World® – Innovation HUB. All rights reserved.</p>
+          <p>© 2022 Little Genius Kids World® – Innovation HUB. All rights reserved.</p>
           {/* <div className="flex gap-6">
             <Link to="#" className="hover:text-accent transition-colors">Privacy Policy</Link>
             <Link to="#" className="hover:text-accent transition-colors">Terms of Service</Link>
