@@ -1,7 +1,6 @@
 import { Link } from "react-router-dom";
 import { MapPin, Phone, Mail } from "lucide-react";
-import logo from "@/assets/logo.png";
-import hubLogo from "@/assets/WhatsApp Image 2026-01-29 at 12.50.51 PM (1).jpeg";
+import hubLogo from "@/assets/ChatGPT Image Jan 29, 2026, 06_25_36 PM.png";
 
 export function Footer() {
   return (
@@ -11,36 +10,19 @@ export function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
           
           {/* Brand */}
-          <div className="space-y-4">
-            <div className="space-y-3">
-              <div className="flex items-center gap-3">
-                <img
-                  src={logo}
-                  alt="Little Genius Kids World Logo"
-                  className="h-14 w-auto object-contain"
-                />
-                <div>
-                  <h3 className="font-lgkw text-lg leading-tight">
-                    Little Genius Kids World®
-                  </h3>
-                </div>
-              </div>
+          {/* Brand */}
+<div className="space-y-6 flex flex-col items-center text-center">
+  <img
+    src={hubLogo}
+    alt="Innovation HUB"
+    className="w-full max-w-md sm:max-w-lg lg:max-w-xl h-auto object-contain"
+  />
 
-              <p className="font-hub text-sm tracking-wide">
-                Innovation HUB
-              </p>
+  <p className="text-muted-foreground text-sm leading-relaxed max-w-sm">
+    Exclusive Evening Learning Centers where children develop skills, confidence, and creativity through activity-based learning.
+  </p>
+</div>
 
-              <img
-                src={hubLogo}
-                alt="Innovation HUB"
-                className="h-10 w-auto object-contain"
-              />
-            </div>
-
-            <p className="text-muted-foreground text-sm leading-relaxed">
-              Exclusive Evening Learning Centers where children develop skills, confidence, and creativity through activity-based learning.
-            </p>
-          </div>
 
           {/* Quick Links */}
           <div>
@@ -93,7 +75,8 @@ export function Footer() {
               <li className="flex gap-3">
                 <MapPin className="w-5 h-5 text-accent flex-shrink-0 mt-0.5" />
                 <span className="text-muted-foreground text-sm">
-                  Register office C-05-320,<br /> Beside Sri Krishna Temple,<br />
+                  Register office C-05-320,<br />
+                  Beside Sri Krishna Temple,<br />
                   Dwaraka Nagar, KADAPA – 516004
                 </span>
               </li>

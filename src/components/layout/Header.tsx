@@ -3,7 +3,8 @@ import { Link, useLocation } from "react-router-dom";
 import { Menu, X, Phone, Mail } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import logo from "@/assets/logo.png";
-
+import logoName from "@/assets/logo-name.png";
+import innovationHub from "@/assets/WhatsApp Image 2026-01-29 at 12.50.51 PM (1).jpeg";
 const navLinks = [
   { name: "Home", path: "/" },
   { name: "Founders", path: "/founders" },
@@ -18,7 +19,8 @@ export function Header() {
   const location = useLocation();
 
   return (
-    <header className="sticky top-0 z-50 bg-card/95 backdrop-blur-md shadow-soft">
+    <header className="sticky top-0 z-50 bg-white shadow-soft">
+
       {/* Top bar */}
       <div className="bg-primary text-primary-foreground py-3 md:py-4">
   <div className="container-custom flex flex-wrap justify-center md:justify-between items-center gap-3 text-base md:text-lg">
@@ -55,22 +57,39 @@ export function Header() {
       <nav className="container-custom py-4">
         <div className="flex items-center justify-between">
           {/* Logo + Brand */}
-          <Link to="/" className="flex items-center gap-2 min-w-0">
-            <img
-              src={logo}
-              alt="Little Genius Kids World Logo"
-              className="h-10 w-auto sm:h-12 shrink-0"
-            />
+          <nav className="container-custom py-4">
+  <div className="flex items-center gap-4">
 
-            <div className="min-w-0">
-              <h1 className="font-lgkw text-primary text-xs sm:text-sm leading-tight truncate">
-                Little Genius Kids World®
-              </h1>
-              <p className="font-hub text-[10px] sm:text-xs text-muted-foreground leading-tight truncate tracking-wide">
-                Innovation HUB
-              </p>
-            </div>
-          </Link>
+    {/* LEFT — Shield Logo */}
+    <img
+      src={logo}
+      alt="Little Genius Kids World Logo"
+      className="h-14 sm:h-20 w-auto shrink-0"
+    />
+
+    {/* RIGHT — Text Section */}
+    <div className="flex flex-col justify-center leading-tight">
+
+      {/* Little Genius Kids World (Top Script Text) */}
+      <img
+        src={logoName}
+        alt="Little Genius Kids World"
+        className="h-7 sm:h-10 w-auto"
+      />
+
+      {/* Innovation HUB + Tagline */}
+      {/* <img
+        src={innovationHub}
+        alt="Innovation HUB"
+        className="h-6 sm:h-8 w-auto mt-1"
+      /> */}
+
+    </div>
+  </div>
+</nav>
+
+
+
 
           {/* Desktop nav */}
           <div className="hidden lg:flex items-center gap-1">

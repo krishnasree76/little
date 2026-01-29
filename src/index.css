@@ -70,15 +70,20 @@
   }
   @font-face {
   font-family: "TAN Headline";
-  src: url("/src/assets/fonts/TAN-Headline.woff2") format("woff2");
+  src: url("/fonts/TAN-Headline.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
   font-display: swap;
 }
 
 @font-face {
-  font-family: "Androgyne";
-  src: url("/src/assets/fonts/Androgyne-Regular.woff2") format("woff2");
+  font-family: "Androgyne Regular";
+  src: url("/fonts/Androgyne-Regular.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
   font-display: swap;
 }
+
 
   .dark {
     --background: 222 47% 11%;
